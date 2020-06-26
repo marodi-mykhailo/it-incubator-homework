@@ -1,14 +1,14 @@
-.message__block{
+.message__block {
     width: 600px;
 }
 
 
-.img__wrapper{
+.img__wrapper {
     position: relative;
 
 }
 
-.message-img{
+.message-img {
     height: 60px;
     width: 60px;
     position: absolute;
@@ -17,7 +17,7 @@
     z-index: 100;
 }
 
-.message{
+.message {
     border-radius: 20px;
     padding: 8px 15px;
     margin-top: 5px;
@@ -25,12 +25,12 @@
     display: inline-block;
 }
 
-.message__box{
+.message__box {
     background-color: #082103;
     position: relative;
 }
 
-.message__box:before{
+.message__box:before {
     content: "";
     position: absolute;
     z-index: 0;
@@ -54,25 +54,25 @@
     border-bottom-right-radius: 10px;
 }
 
-.message__box__wrapper{
+.message__box__wrapper {
 
 }
 
-.message__box-title{
+.message__box-title {
     font-size: 16px;
-color: #938bc1;
+    color: #938bc1;
 }
 
-.message__box-text{
+.message__box-text {
     font-size: 14px;
-color: #bccfbb;
+    color: #bccfbb;
 }
 
-.message__box-time{
-   padding-bottom: 5px;
+.message__box-time {
+    padding-bottom: 5px;
 }
 
-.message-time{
-    color: rgba(188, 207,187, 0.6);
+.message-time {
+    color: rgba(188, 207, 187, 0.6);
     font-size: 14px;
 }
