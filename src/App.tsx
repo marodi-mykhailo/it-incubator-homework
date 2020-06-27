@@ -6,7 +6,11 @@ import ToDoList from "./toDoList/ToDoList";
 function App() {
     return (
         <div>
-            <Message name="Andrej" text="lorem ipsum" />
+            <Message name="Andrej" text="lorem asdadasd
+            fbsjbfjhbskhbskhbhjsb
+            jhlvbsjhbjhsbjvbs
+            jhbsjhbjasbjvbshjvba
+            sjbvjhasbhjvbasjhbvj" />
             <ToDoList/>
         </div>
     );
