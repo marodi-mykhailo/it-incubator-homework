@@ -38,8 +38,7 @@ function ToDoList() {
     }
 
     const deleteItem = (e: number) => {
-        let a = list.filter(x => x.id !== e)
-        setList(a);
+        setList( list.filter(x => x.id !== e));
     }
 
 

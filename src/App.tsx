@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Message from "./messages/Message";
 import ToDoList from "./toDoList/ToDoList";
+import Input from "./input/Input"
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             jhbsjhbjasbjvbshjvba
             sjbvjhasbhjvbasjhbvj" />
             <ToDoList/>
+            <Input/>
         </div>
     );
 }
