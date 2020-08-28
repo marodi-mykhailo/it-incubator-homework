@@ -1,5 +1,7 @@
 import React, {ChangeEvent, useState, KeyboardEvent} from "react";
 import {v1} from "uuid";
+import {CommonInput} from "../common/CommonInput/CommonInput";
+import {CommonButton} from "../common/CommonButton/CommonButton";
 
 type UserNameType = {
     id: string,
@@ -31,12 +33,17 @@ function Input() {
         if (e.charCode === 13) onClickHandler()
     }
 
+    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+        setInput(e.currentTarget.value)
+    }
+
     return (<div className="m-4">
         <h1>Homework #3</h1>
-        <input value={input} onChange={e => setInput(e.currentTarget.value)} onKeyPress={onKeyHandler}/>
-        <button onClick={onClickHandler}>+</button>
-        <br/>
-        <span>{usersArray.length}</span>
+        <CommonInput value={input} onChange={onChangeHandler} onKeyPress={onKeyHandler}/>
+        <div className={'d-flex'}>
+        <CommonButton value={'+'} onClick={onClickHandler}/>
+        <div><p className={'h3'}>{usersArray.length}</p></div>
+        </div>
     </div>)
 }
 

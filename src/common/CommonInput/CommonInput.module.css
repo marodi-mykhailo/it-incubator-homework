@@ -1,0 +1,27 @@
+.wrapper{
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background: #3e3e3e;
+    border-radius: 10px;
+}
+.input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.input::placeholder {
+    color: #666;
+}
+
+.input:focus {
+    border-bottom-color: #ddd;
+}

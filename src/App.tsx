@@ -3,6 +3,7 @@ import './App.css';
 import Message from "./messages/Message";
 import ToDoList from "./toDoList/ToDoList";
 import Input from "./input/Input"
+import {CommonComponent} from "./common/CommonComponent";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             sjbvjhasbhjvbasjhbvj" />
             <ToDoList/>
             <Input/>
+            <CommonComponent/>
         </div>
     );
 }

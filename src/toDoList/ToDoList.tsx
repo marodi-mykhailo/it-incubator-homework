@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import './ToDoList.css'
+import {CommonInput} from "../common/CommonInput/CommonInput";
+import {CommonButton} from "../common/CommonButton/CommonButton";
 
 function ToDoList() {
     let reverse = [{
@@ -34,11 +36,25 @@ function ToDoList() {
     const filterList = (e: any) => {
         const option = e.currentTarget.value;
         setList(reverse.filter(value => value.priority.indexOf(option) > -1 || value.name.indexOf(option) > -1))
-        if (option == '') setList(reverse);
+        if (option === '') setList(reverse);
     }
 
     const deleteItem = (e: number) => {
-        setList( list.filter(x => x.id !== e));
+        setList(list.filter(x => x.id !== e));
+    }
+
+    const lowFilter = () => {
+        setList(reverse.filter(prior => prior.priority === 'low'))
+    }
+    const middleFilter = () => {
+        setList(reverse.filter(prior => prior.priority === 'middle'))
+    }
+    const hightFilter = () => {
+        setList(reverse.filter(prior => prior.priority === 'high'))
+    }
+
+    const resetHandler = () => {
+        setList(reverse)
     }
 
 
@@ -52,30 +68,26 @@ function ToDoList() {
             </h2>
             <ul>
                 {list.map(x => {
-                    return (<li key={x.id}>{x.name}; &nbsp; priority: {x.priority}
-                        <button className=" deleteButton d-none m-2 p-2" onClick={() => deleteItem(x.id)}>X</button>
-                    </li>)
+                    return (<div className={'d-flex'}>
+                        <li key={x.id}><p>{x.name}; &nbsp; priority: {x.priority}</p>
+                        </li>
+                        <CommonButton value={'X'}
+                                      onClick={() => deleteItem(x.id)}/>
+                    </div>)
                 })}
             </ul>
-            <button className="m-2 p-2" onClick={() => setList(reverse.filter(prior => prior.priority == 'low'))}>low
-            </button>
-            <button className="m-2 p-2"
-                    onClick={() => setList(reverse.filter(prior => prior.priority == 'middle'))}>middle
-            </button>
-            <button className="m-2 p-2"
-                    onClick={() => setList(reverse.filter(prior => prior.priority == 'high'))}>high
-            </button>
-            <button className="m-2 p-2" onClick={() => setList(reverse)}>reset</button>
-            <button className="m-2 p-2" onClick={() => {
-                const but = document.getElementsByClassName('deleteButton');
-                for (let i = 0; i < but.length; i++) {
-                    but[i].classList.toggle('d-none')
-                }
-            }}>delete
-            </button>
+            <div className={'d-flex'}>
+            <CommonButton value={'low'} onClick={lowFilter}/>
+            <CommonButton value={'middle'}
+                          onClick={middleFilter}/>
+            <CommonButton value={'hight'}
+                          onClick={hightFilter}/>
+            <CommonButton value={'reset'} onClick={resetHandler}/>
+            </div>
             <br/>
             Filter <br/>
-            <input onChange={filterList}/>
+            <CommonInput onChange={filterList}/>
+
         </div>
     )
 
