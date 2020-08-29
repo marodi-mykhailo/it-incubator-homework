@@ -71,7 +71,7 @@ function ToDoList() {
                     return (<div className={'d-flex'}>
                         <li key={x.id}><p>{x.name}; &nbsp; priority: {x.priority}</p>
                         </li>
-                        <CommonButton value={'X'}
+                        <CommonButton type={"delete"} value={'X'}
                                       onClick={() => deleteItem(x.id)}/>
                     </div>)
                 })}

@@ -5,11 +5,13 @@ type CommonInputPropsType = {
     value?: string
     onChange?: (e: ChangeEvent<HTMLInputElement>) => void
     onKeyPress?: (e: KeyboardEvent<HTMLInputElement>) => void
+    error?: string
 }
 
 export function CommonInput(props: CommonInputPropsType) {
-    return (<div className={style.wrapper}>
-        <input className={style.input} placeholder={'Enter text'} onChange={props.onChange}
+    return (<div className={props.error ? style.wrapper + ' ' +  style.errorInput : style.wrapper}>
+        <input className={style.input} placeholder={props.error? props.error: "Enter text"}
+               onChange={props.onChange}
                onKeyPress={props.onKeyPress}/>
     </div>)
 }

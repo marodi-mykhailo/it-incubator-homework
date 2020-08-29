@@ -6,7 +6,7 @@ import {CommonButton} from "./CommonButton/CommonButton";
 export function CommonComponent() {
     return (
         <div>
-            <CommonInput/>
+            <CommonInput error={'Error asda'}/>
             <CommonButton value={'Click now'}/>
         </div>
     )

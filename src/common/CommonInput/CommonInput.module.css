@@ -25,3 +25,9 @@
 .input:focus {
     border-bottom-color: #ddd;
 }
+
+
+.errorInput{
+    background: orangered;
+}
+

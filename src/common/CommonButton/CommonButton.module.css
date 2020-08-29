@@ -34,3 +34,7 @@
     background-position: 0;
     color: white;
 }
+
+.deleteBtn {
+    color: red;
+}
