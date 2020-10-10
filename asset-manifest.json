@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/it-incubator-homework/static/css/main.de47fe10.chunk.css",
-    "main.js": "/it-incubator-homework/static/js/main.b731e9a3.chunk.js",
-    "main.js.map": "/it-incubator-homework/static/js/main.b731e9a3.chunk.js.map",
+    "main.css": "/it-incubator-homework/static/css/main.ba97a3c8.chunk.css",
+    "main.js": "/it-incubator-homework/static/js/main.a8e9331a.chunk.js",
+    "main.js.map": "/it-incubator-homework/static/js/main.a8e9331a.chunk.js.map",
     "runtime-main.js": "/it-incubator-homework/static/js/runtime-main.4fdc2ff0.js",
     "runtime-main.js.map": "/it-incubator-homework/static/js/runtime-main.4fdc2ff0.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/it-incubator-homework/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.a4877df3.chunk.js": "/it-incubator-homework/static/js/2.a4877df3.chunk.js",
-    "static/js/2.a4877df3.chunk.js.map": "/it-incubator-homework/static/js/2.a4877df3.chunk.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/it-incubator-homework/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.4c815794.chunk.js": "/it-incubator-homework/static/js/2.4c815794.chunk.js",
+    "static/js/2.4c815794.chunk.js.map": "/it-incubator-homework/static/js/2.4c815794.chunk.js.map",
     "index.html": "/it-incubator-homework/index.html",
-    "precache-manifest.11771e062dd53e778618fb18f58a292f.js": "/it-incubator-homework/precache-manifest.11771e062dd53e778618fb18f58a292f.js",
+    "precache-manifest.c020f373dc7e4165b2500996c7d44489.js": "/it-incubator-homework/precache-manifest.c020f373dc7e4165b2500996c7d44489.js",
     "service-worker.js": "/it-incubator-homework/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/it-incubator-homework/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.de47fe10.chunk.css.map": "/it-incubator-homework/static/css/main.de47fe10.chunk.css.map",
-    "static/js/2.a4877df3.chunk.js.LICENSE.txt": "/it-incubator-homework/static/js/2.a4877df3.chunk.js.LICENSE.txt"
+    "static/css/2.d9ad5f5c.chunk.css.map": "/it-incubator-homework/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.ba97a3c8.chunk.css.map": "/it-incubator-homework/static/css/main.ba97a3c8.chunk.css.map",
+    "static/js/2.4c815794.chunk.js.LICENSE.txt": "/it-incubator-homework/static/js/2.4c815794.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4fdc2ff0.js",
-    "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.a4877df3.chunk.js",
-    "static/css/main.de47fe10.chunk.css",
-    "static/js/main.b731e9a3.chunk.js"
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.4c815794.chunk.js",
+    "static/css/main.ba97a3c8.chunk.css",
+    "static/js/main.a8e9331a.chunk.js"
   ]
 }
